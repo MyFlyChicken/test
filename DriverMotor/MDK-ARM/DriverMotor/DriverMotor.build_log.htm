@@ -1,0 +1,138 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: AA huahuo, aaa, LIC=V85FJ-UQGFQ-YDCK5-GZNY8-K7DGQ-M2R05
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.30.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.30.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.42.0.0
+ 
+<h2>Project:</h2>
+G:\5_Keil\DriverMotor\DriverMotor\MDK-ARM\DriverMotor.uvprojx
+Project File Date:  04/21/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'DriverMotor'
+assembling startup_stm32f103xe.s...
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling main.c...
+../Src/main.c(37): warning:  #1295-D: Deprecated declaration Sys_2msChk - give arg types
+  BOOL Sys_2msChk();
+../Src/main.c(142): warning:  #188-D: enumerated type mixed with another type
+              bLedCtr = !bLedCtr;
+../Src/main.c(44): warning:  #550-D: variable "ucCnt"  was set but never used
+      unsigned char ucCnt;
+../Src/main.c(26): warning:  #550-D: variable "ucSteup"  was set but never used
+  static unsigned char ucSteup;//while´¦Àí²½Öè
+../Src/main.c: 4 warnings, 0 errors
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling Public.c...
+compiling Comm.c...
+..\Function\Comm.c(9): warning:  #550-D: variable "ucSubCmd"  was set but never used
+  static unsigned char ucSubCmd;
+..\Function\Comm.c: 1 warning, 0 errors
+compiling Phy_TIMER.c...
+..\Phy_Src\Phy_TIMER.c(33): warning:  #223-D: function "Error_Handler" declared implicitly
+      Error_Handler();
+..\Phy_Src\Phy_TIMER.c(39): warning:  #223-D: function "Error_Handler" declared implicitly
+      Error_Handler();
+..\Phy_Src\Phy_TIMER.c(50): warning:  #223-D: function "Error_Handler" declared implicitly
+      Error_Handler();
+..\Phy_Src\Phy_TIMER.c(54): warning:  #223-D: function "Error_Handler" declared implicitly
+      Error_Handler();
+..\Phy_Src\Phy_TIMER.c(72): warning:  #223-D: function "HAL_TIM_MspPostInit" declared implicitly
+    HAL_TIM_MspPostInit(&htim1);
+..\Phy_Src\Phy_TIMER.c(22): warning:  #177-D: variable "sBreakDeadTimeConfig"  was declared but never referenced
+    TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
+..\Phy_Src\Phy_TIMER.c(101): warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+..\Phy_Src\Phy_TIMER.c(107): warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+..\Phy_Src\Phy_TIMER.c(144): warning:  #223-D: function "Error_Handler" declared implicitly
+      Error_Handler();
+..\Phy_Src\Phy_TIMER.c(150): warning:  #223-D: function "Error_Handler" declared implicitly
+      Error_Handler();
+..\Phy_Src\Phy_TIMER.c: 10 warnings, 0 errors
+compiling system_stm32f1xx.c...
+compiling Phy_IIC.c...
+..\Phy_Src\Phy_IIC.c(32): warning:  #223-D: function "Error_Handler" declared implicitly
+      Error_Handler();
+..\Phy_Src\Phy_IIC.c(11): warning:  #177-D: function "Phy_I2C1_Init"  was declared but never referenced
+  static void Phy_I2C1_Init(void)
+..\Phy_Src\Phy_IIC.c: 2 warnings, 0 errors
+compiling Phy_GPIO.c...
+compiling Phy_UART.c...
+..\Phy_Src\Phy_UART.c(31): warning:  #223-D: function "Error_Handler" declared implicitly
+          Error_Handler();
+..\Phy_Src\Phy_UART.c(128): warning:  #223-D: function "Comm_VariableInit" declared implicitly
+          Comm_VariableInit();
+..\Phy_Src\Phy_UART.c(136): warning:  #223-D: function "Comm_CmdDeal" declared implicitly
+              Comm_CmdDeal((unsigned char *)&pxRxBuffer->ucRxBuffer);
+..\Phy_Src\Phy_UART.c: 3 warnings, 0 errors
+compiling Pid.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling MotorCtrl.c...
+..\Function\MotorCtrl.c(5): warning:  #815-D: type qualifier on return type is meaningless
+  const void (* const Function[2])(MOTOR_DIR_CTR) = {Phy_GpioMotorCtr1, Phy_GpioMotorCtr2};
+..\Function\MotorCtrl.c(5): warning:  #144-D: a value of type "void (*)(MOTOR_DIR_CTR)" cannot be used to initialize an entity of type "const void (*const)(MOTOR_DIR_CTR)"
+  const void (* const Function[2])(MOTOR_DIR_CTR) = {Phy_GpioMotorCtr1, Phy_GpioMotorCtr2};
+..\Function\MotorCtrl.c(5): warning:  #144-D: a value of type "void (*)(MOTOR_DIR_CTR)" cannot be used to initialize an entity of type "const void (*const)(MOTOR_DIR_CTR)"
+  const void (* const Function[2])(MOTOR_DIR_CTR) = {Phy_GpioMotorCtr1, Phy_GpioMotorCtr2};
+..\Function\MotorCtrl.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=10808 RO-data=888 RW-data=56 ZI-data=1440  
+FromELF: creating hex file...
+"DriverMotor\DriverMotor.axf" - 0 Error(s), 23 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_DriverMotor
+  D:\Keil_v5\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
